@@ -1,0 +1,10 @@
+<h1>呼び出し番号</h1>
+<h3>呼び出し一覧</h3>
+<%= link_to "新規投稿へ", new_tweet_path %>
+<div class="tweets-container">
+  <% @tweets.each do |t| %>
+    <div class="tweet">
+      <%= t.number %>
+    </div>
+  <% end %>
+</div>
